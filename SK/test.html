@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<script type="text/javascript">
+	$(document).ready(function($)
+	{
+		var page_url = '<?php echo $app_url?>/';
+
+		$(document).on('click', '.btn_load_home', function(event)
+		{
+			event.preventDefault();
+
+			$(document).attr("title", 'Home');
+			$(document).find('meta[name=description]').attr('content', data.description);
+
+			window.history.pushState("", "", page_url);
+			$(document).find('.post_msg').html(" ");
+		});
+
+		$(document).on('click', '.btn_load_screen', function(event)
+		{
+			event.preventDefault();
+
+			var call_type = $(this).attr('call_type');
+
+			$.getJSON(page_url+'ajax.php', {call_type: call_type}, function(data, textStatus, xhr)
+			{
+				console.log(data);
+
+				$(document).attr("title", data.title);
+				$(document).find('meta[name=description]').attr('content', data.description);
+
+				$(document).find('.post_msg').html(data.data);
+
+				window.history.pushState("", "", page_url+data.url);
+			});
+		});
+
+
+	});
+	</script>
+
+<script type="text/javascript">
+function ChangeUrl(title, url) {
+    if (typeof (history.pushState) != "undefined") {
+        var obj = { Title: title, Url: url };
+        history.pushState(obj, obj.Title, obj.Url);
+    } else {
+        alert("Browser does not support HTML5.");
+    }
+}
+</script>
+<input type="button" value="Page1" onclick="ChangeUrl('Page1', 'Page1.htm');" />
+<input type="button" value="Page2" onclick="ChangeUrl('Page2', 'Page2.htm');" />
+<input type="button" value="Page3" onclick="ChangeUrl('Page3', 'Page3.htm');" />
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript">
+    function ChangeUrl(page, url) {
+        if (typeof (history.pushState) != "undefined") {
+            var obj = { Page: page, Url: url };
+            history.pushState(obj, obj.Page, obj.Url);
+        } else {
+            alert("Browser does not support HTML5.");
+        }
+    }
+    $(function () {
+        $("#button1").click(function () {
+            ChangeUrl('Page1', 'Page1.htm');
+        });
+        $("#button2").click(function () {
+            ChangeUrl('Page2', 'Page2.htm');
+        });
+        $("#button3").click(function () {
+            ChangeUrl('Page3', 'Page3.htm');
+        });
+    });
+</script>
+<input type="button" value="Page1" id="button1" />
+<input type="button" value="Page2" id="button2" />
+<input type="button" value="Page3" id="button3" />
