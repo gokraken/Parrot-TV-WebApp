@@ -8,12 +8,12 @@ var joj = function joj(){
 }
 
 var jojplus = function jojplus(){
-    var player = new Playerjs({id:"player", file:"http://nn2.joj.sk/hls/jojplus-540.m3u8"});
+    var player = new Playerjs({id:"player", file:"//nn2.joj.sk/hls/jojplus-540.m3u8"});
 
 }
 
 var jojfamily = function jojfamily(){
-    var player = new Playerjs({id:"player", file:"http://nn.geo.joj.sk/hls/family-360.m3u8"});
+    var player = new Playerjs({id:"player", file:"//nn.geo.joj.sk/hls/family-360.m3u8"});
 
 }
 
@@ -28,7 +28,7 @@ var ta3 = function ta3(){
 }
 
 var fashiontv = function fashiontv(){
-    var player = new Playerjs({id:"player", file:"http://lb.streaming.sk/fashiontv/stream/playlist.m3u8?fluxustv.m3u8"});
+    var player = new Playerjs({id:"player", file:"//lb.streaming.sk/fashiontv/stream/playlist.m3u8?fluxustv.m3u8"});
 
 }
 
@@ -38,7 +38,7 @@ var rik = function rik(){
 }
 
 var tvlux = function tvlux(){
-    var player = new Playerjs({id:"player", file:"http://live.tvlux.sk:1935/lux/lux.stream_360p/chunklist_w1295439472.m3u8"});
+    var player = new Playerjs({id:"player", file:"//live.tvlux.sk:1935/lux/lux.stream_360p/chunklist_w1295439472.m3u8"});
 
 }
 
@@ -48,17 +48,17 @@ var lifetv = function lifetv(){
 }
 
 var senzitv = function senzitv(){
-    var player = new Playerjs({id:"player", file:"http://109.74.144.130/live/senzitest/playlist.m3u8"});
+    var player = new Playerjs({id:"player", file:"//109.74.144.130/live/senzitest/playlist.m3u8"});
 
 }
 
 var tvosem = function tvosem(){
-    var player = new Playerjs({id:"player", file:"http://109.74.145.11:1935/tv8/ngrp:tv8.stream_all/playlist.m3u8"});
+    var player = new Playerjs({id:"player", file:"//109.74.145.11:1935/tv8/ngrp:tv8.stream_all/playlist.m3u8"});
 
 }
 
 var tvraj = function tvraj(){
-    var player = new Playerjs({id:"player", file:"http://ottst05.flexitv.sk/2827-tv-pc.m3u8"});
+    var player = new Playerjs({id:"player", file:"//ottst05.flexitv.sk/2827-tv-pc.m3u8"});
 
 }
 
@@ -70,12 +70,12 @@ var btv = function btv(){
 }
 
 var kd = function kd(){
-    var player = new Playerjs({id:"player", file:"http://lb.streaming.sk/tvnasa/stream/playlist.m3u8"});
+    var player = new Playerjs({id:"player", file:"//lb.streaming.sk/tvnasa/stream/playlist.m3u8"});
 
 }
 
 var tvnz = function tvnz(){
-    var player = new Playerjs({id:"player", file:"http://s1.media-planet.sk:80/live/novezamky/BratuMarian.m3u8"});
+    var player = new Playerjs({id:"player", file:"//s1.media-planet.sk:80/live/novezamky/BratuMarian.m3u8"});
 
 }
 
@@ -87,7 +87,7 @@ var tvr = function tvr(){
 }
 
 var tvru = function tvru(){
-    var player = new Playerjs({id:"player", file:"http://lb.streaming.sk/tvruzinov/stream/playlist.m3u8"});
+    var player = new Playerjs({id:"player", file:"//lb.streaming.sk/tvruzinov/stream/playlist.m3u8"});
 
 }
 
@@ -124,7 +124,7 @@ var novagold = function novagold(){
 }
 
 var novaaction = function novaaction(){
-    var player = new Playerjs({id:"player", file:"http://rtmp.elektrika.cz/live/myStream.sdp/playlist.m3u8"});
+    var player = new Playerjs({id:"player", file:"//rtmp.elektrika.cz/live/myStream.sdp/playlist.m3u8"});
 
 }
 
@@ -134,27 +134,27 @@ var novacinema = function novacinema(){
 }
 
 var elektrikatv = function elektrikatv(){
-    var player = new Playerjs({id:"player", file:"http://rtmp.elektrika.cz/live/myStream.sdp/playlist.m3u8"});
+    var player = new Playerjs({id:"player", file:"//rtmp.elektrika.cz/live/myStream.sdp/playlist.m3u8"});
 
 }
 
 var ocko = function ocko(){
-    var player = new Playerjs({id:"player", file:"http://ocko-live.ssl.cdn.cra.cz/channels/ocko/playlist.m3u8"});
+    var player = new Playerjs({id:"player", file:"//ocko-live.ssl.cdn.cra.cz/channels/ocko/playlist.m3u8"});
 
 }
 
 var ockogold = function ockogold(){
-    var player = new Playerjs({id:"player", file:"http://ocko-live.ssl.cdn.cra.cz/channels/ocko_gold/playlist/cze/live_hq.m3u8"});
+    var player = new Playerjs({id:"player", file:"//ocko-live.ssl.cdn.cra.cz/channels/ocko_gold/playlist/cze/live_hq.m3u8"});
 
 }
 
 var ockoexpres = function ockoexpres(){
-    var player = new Playerjs({id:"player", file:"http://ocko-live.ssl.cdn.cra.cz/channels/ocko_expres/playlist/cze/live_hq.m3u8"});
+    var player = new Playerjs({id:"player", file:"//ocko-live.ssl.cdn.cra.cz/channels/ocko_expres/playlist/cze/live_hq.m3u8"});
 
 }
 
 var ockostar = function ockostar(){
-    var player = new Playerjs({id:"player", file:"http://ocko-live.ssl.cdn.cra.cz/channels/ocko_gold/playlist/cze/live_hq.m3u8"});
+    var player = new Playerjs({id:"player", file:"//ocko-live.ssl.cdn.cra.cz/channels/ocko_gold/playlist/cze/live_hq.m3u8"});
 
 }
 
@@ -164,7 +164,7 @@ var polartv = function polartv(){
 }
 
 var huntertv = function huntertv(){
-    var player = new Playerjs({id:"player", file:"http://www.huntertv.cz/live/4-playlist.m3u8"});
+    var player = new Playerjs({id:"player", file:"//www.huntertv.cz/live/4-playlist.m3u8"});
 
 }
 
@@ -179,7 +179,7 @@ var tvnoe = function tvnoe(){
 }
 
 var retro = function retro(){
-    var player = new Playerjs({id:"player", file:"http://stream.mediawork.cz/retrotv/retrotvHQ1/playlist.m3u8"});
+    var player = new Playerjs({id:"player", file:"//stream.mediawork.cz/retrotv/retrotvHQ1/playlist.m3u8"});
 
 }
 
@@ -189,12 +189,12 @@ var slagr = function slagr(){
 }
 
 var slagr2 = function slagr2(){
-    var player = new Playerjs({id:"player", file:"http://92.62.234.233/slagr2.m3u"});
+    var player = new Playerjs({id:"player", file:"//92.62.234.233/slagr2.m3u"});
 
 }
 
 var tvnatura = function tvnatura(){
-    var player = new Playerjs({id:"player", file:"http://media1.tvnatura.cz/live_out/1/live.m3u8"});
+    var player = new Playerjs({id:"player", file:"//media1.tvnatura.cz/live_out/1/live.m3u8"});
 
 }
 
