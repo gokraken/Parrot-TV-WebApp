@@ -6,7 +6,7 @@ var joj = function joj(){
     var player = new Playerjs({id:"player", file:"http://nn2.joj.sk/hls/joj-720.m3u8"});
 
 }
-                      
+
 var jojplus = function jojplus(){
     var player = new Playerjs({id:"player", file:"http://nn2.joj.sk/hls/jojplus-540.m3u8"});
 
@@ -63,6 +63,8 @@ var tvraj = function tvraj(){
 }
 
 var btv = function btv(){
+    console.log("RTMP Not Supported");
+    console.log(btv);
     var player = new Playerjs({id:"player", file:"rtmp://s1.media-planet.sk:80/live/bardejov1"});
 
 }
@@ -78,6 +80,8 @@ var tvnz = function tvnz(){
 }
 
 var tvr = function tvr(){
+    console.log("RTMP Not Supported");
+    console.log(tvr);
     var player = new Playerjs({id:"player", file:"rtmp://s1.media-planet.sk:80/live/reduta"});
 
 }
@@ -88,6 +92,8 @@ var tvru = function tvru(){
 }
 
 var tvt = function tvt(){
+    console.log("RTMP Not Supported");
+    console.log(tvt);
     var player = new Playerjs({id:"player", file:"rtmp://s1.media-planet.sk:80/live/turzovka"});
 
 }
@@ -106,7 +112,7 @@ var nova = function nova(){
     var player = new Playerjs({id:"player", file:"https://nova-live.ssl.cdn.cra.cz/channels/nova_avod/playlist/cze/live_hq.m3u8"});
 
 }
-                      
+
 var nova2 = function nova2(){
     var player = new Playerjs({id:"player", file:"https://nova-live.ssl.cdn.cra.cz/channels/nova_2_avod/playlist.m3u8"});
 
@@ -201,4 +207,3 @@ var tvm = function tvm(){
     var player = new Playerjs({id:"player", file:"https://hlscat.com/my_list/s/f0f7d1cae255f3d243cafe2f4764c9d5.m3u8"});
 
 }
-    
