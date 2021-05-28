@@ -3,7 +3,7 @@
 // ------------------------------------------------------------------------------
 
 var joj = function joj(){
-    var player = new Playerjs({id:"player", file:"http://nn2.joj.sk/hls/joj-720.m3u8"});
+    var player = new Playerjs({id:"player", file:"//nn2.joj.sk/hls/joj-720.m3u8"});
 
 }
 
