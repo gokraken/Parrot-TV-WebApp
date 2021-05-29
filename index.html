@@ -29,7 +29,7 @@
         <a class="channels" onclick="rik()"><button><img border="0" src="https://i.ibb.co/WPy9w4n/Rik.png" width="" height="30px">&nbsp; <strong>&nbsp &nbsp &nbsp &nbspRik</strong></button></a>
         <a class="channels" onclick="tvlux()"><button><img border="0" src="https://i.ibb.co/4jx6gzZ/TV-Lux.png" width="" height="30px">&nbsp; <strong>&nbsp &nbsp &nbsp TV Lux</strong></button></a>
         <a class="channels" onclick="lifetv()"><button><img border="0" src="https://i.ibb.co/3YktrSX/Life-TV.png" width="" height="30px">&nbsp; <strong>&nbsp Life TV HD</strong></button></a>
-        <a class="channels" onclick=senzitv()""><button><img border="0" src="https://i.ibb.co/fnMky9c/Senzi.png" width="" height="30px">&nbsp; <strong>&nbsp &nbsp &nbsp Senzi TV</strong></button></a>
+        <a class="channels" onclick="senzitv()"><button><img border="0" src="https://i.ibb.co/fnMky9c/Senzi.png" width="" height="30px">&nbsp; <strong>&nbsp &nbsp &nbsp Senzi TV</strong></button></a>
         <a class="channels" onclick="tvosem()"><button><img border="0" src="https://i.ibb.co/wRG1nkt/TV-OSEM.png" width="" height="30px">&nbsp; <strong>&nbsp Televizia OSEM</strong></button></a>
         <a class="channels" onclick="tvraj()"><button><img border="0" src="https://i.ibb.co/J3TT3bZ/TV-Raj.png" width="" height="30px">&nbsp; <strong>&nbsp &nbsp TV Raj</strong></button></a>
         <a class="channels" onclick="btv()"><button><img border="0" src="https://i.ibb.co/CVrPbfy/BTV.jpg" width="" height="30px">&nbsp; <strong>&nbsp &nbsp Bardejovska TV</strong></button></a>
@@ -37,7 +37,7 @@
         <a class="channels" onclick="tvnz()"><button><img border="0" src="https://i.ibb.co/Y2XDLmH/NZTV.png" width="" height="30px">&nbsp; <strong>&nbsp &nbsp &nbsp TV Nov&eacute; Z&aacute;mky </strong></button></a>
         <a class="channels" onclick="tvr()"><button><img border="0" src="https://i.ibb.co/S6snjM0/TVR.png" width="" height="30px">&nbsp; <strong>&nbsp &nbsp TV Reduta</strong></button></a>
         <a class="channels" onclick="tvru()"><button><img border="0" src="https://i.ibb.co/mzbMHpg/TVRU.png" width="" height="30px">&nbsp; <strong>&nbsp TV Ru&zcaron;inov</strong></button></a>
-        <a class="channels" onclick=tvt()""><button><img border="0" src="https://i.ibb.co/bmTMnr4/TVT.png" width="" height="30px">&nbsp; <strong>&nbsp TV Turzovka</strong></button></a>
+        <a class="channels" onclick="tvt()"><button><img border="0" src="https://i.ibb.co/bmTMnr4/TVT.png" width="" height="30px">&nbsp; <strong>&nbsp TV Turzovka</strong></button></a>
 
         </div>
 
@@ -53,13 +53,18 @@
           min-height: 100% !important;
           height: 100%;
         }
+        img {
+          background-color: grey;
+        }
 
 
 
             button {
                 background-color: black;
                 border: 3px solid grey;
-                width: 225px;
+                width: 100%;
+                height: 7%;
+                text-align: left;
             }
 
             strong {
@@ -67,9 +72,8 @@
             }
 
             .player {
-                width: 100%;
-                height: 1000px;
-                border: 1px solid gre;
+              width: 100%;
+                border: 1px solid grey;
             }
 
             .State {
@@ -85,10 +89,10 @@
 
             .Channels {
                 border: 1px solid grey;
-                height: 50%;
+                height: 100%;
                 width: 100%;
-                overflow-y: scroll;
-
+                overflow-y: hidden;
+                overflow-x: hidden;;
             }
 
             .SS {
@@ -97,13 +101,15 @@
             }
 
             body {
+              overflow-x: hidden;
                 background-color: black;
-                overflow: hidden;
             }
+
+
 
             /* width */
 ::-webkit-scrollbar {
-  width: 20px;
+  width: 5px;
 }
 
 /* Track */
