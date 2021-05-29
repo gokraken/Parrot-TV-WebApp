@@ -1,0 +1,138 @@
+<html>
+
+<head>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<script src="https://cdn.plrjs.com/player/6i77k2er7y64h/odzgctzvvcne.js" type="text/javascript"></script>
+    <script src="https://github.com/ParrotDevelopers/Parrot-TV-WebApp/raw/main/JS/ChannelSelect.js" type="text/javascript"></script>
+<head>
+<body>
+  <div class="play" id="player"></div>
+
+  <script>
+     var player = new Playerjs({id:"player", file:"https://github.com/ParrotDevelopers/Parrot-TV-WebApp/blob/main/VIdeo/SelectChannel.mp4?raw=true"});
+  </script>
+
+  <p><strong>SK Channels</strong></p>
+  <div class="col">
+      
+       <p><a class="channels" onclick="joj()"><button><img border="0" src="https://i.ibb.co/SccZK6g/JOJ.png" width="" height="30px"></button></a>
+        <a class="channels" onclick="jojplus()"><button><img border="0" src="https://i.ibb.co/G5VWSNM/Plus.png" width="" height="30px"></strong></button></a>
+        <a class="channels" onclick="jojfamily()"><button><img border="0" src="https://i.ibb.co/MNRvsnZ/JOJ-Family.jpg" width="" height="30px"></strong></button></a>
+        <a class="channels" onclick="wau()"><button><img border="0" src="https://i.ibb.co/kmDHqy3/WAU.png" width="" height="30px"></button></a>
+        <a class="channels" onclick="ta3"><button><img border="0" src="https://i.ibb.co/vcSFT8C/TA3.png" width="" height="30px"></button></a>
+        <a class="channels" onclick="fashiontv()"><button><img border="0" src="https://i.ibb.co/XzBpYkL/Fashion-TV.png" width="" height="30px"></button></a>
+        <a class="channels" onclick="rik()"><button><img border="0" src="https://i.ibb.co/WPy9w4n/Rik.png" width="" height="30px"></button></a>
+        <a class="channels" onclick="tvlux()"><button><img border="0" src="https://i.ibb.co/4jx6gzZ/TV-Lux.png" width="" height="30px"></button></a>
+        <a class="channels" onclick="lifetv()"><button><img border="0" src="https://i.ibb.co/3YktrSX/Life-TV.png" width="" height="30px"></button></a>
+        <a class="channels" onclick="senzitv()"><button><img border="0" src="https://i.ibb.co/fnMky9c/Senzi.png" width="" height="30px"></button></a>
+        <a class="channels" onclick="tvosem()"><button><img border="0" src="https://i.ibb.co/wRG1nkt/TV-OSEM.png" width="" height="30px"></button></a>
+        <a class="channels" onclick="tvraj()"><button><img border="0" src="https://i.ibb.co/J3TT3bZ/TV-Raj.png" width="" height="30px"></button></a>
+        <a class="channels" onclick="btv()"><button><img border="0" src="https://i.ibb.co/CVrPbfy/BTV.jpg" width="" height="30px"></button></a>
+        <a class="channels" onclick="kd()"><button><img border="0" src="https://i.ibb.co/phBd44T/Kosice-Dnes.jpg" width="" height="30px"></button></a>
+        <a class="channels" onclick="tvnz()"><button><img border="0" src="https://i.ibb.co/Y2XDLmH/NZTV.png" width="" height="30px"></button></a>
+        <a class="channels" onclick="tvr()"><button><img border="0" src="https://i.ibb.co/S6snjM0/TVR.png" width="" height="30px"></button></a>
+        <a class="channels" onclick="tvru()"><button><img border="0" src="https://i.ibb.co/mzbMHpg/TVRU.png" width="" height="30px"></button></a>
+        <a class="channels" onclick="tvt()"><button><img border="0" src="https://i.ibb.co/bmTMnr4/TVT.png" width="" height="30px"></button></a></p>
+
+  </div>
+
+  <div class="col">
+
+  </div>
+
+  <style>
+      strong {
+          font-size: 20px;
+          color: antiquewhite;
+      }
+      
+      button {
+          background-color: dimgrey;
+          border: 0;
+          width: 500px;
+          height: auto;
+      }
+      
+ .play {
+   width: 100s%;
+   height: 40%!important;
+ }
+
+  .col {
+    height: 25%;
+      border: 5px solid black;
+      overflow-x: auto;
+      overflow-y: hidden;
+  }
+
+  </style>
+</body>
+
+  <bottom>
+<nav class="nav">
+  <a href="#" class="nav__link nav__link--active">
+    <img src="https://i.ibb.co/SVHDcWj/rsz-parrottv1.jpg"></img>
+    <span class="nav__text">Parrot TV</span>
+  </a>
+  <a href="#" class="nav__link">
+    <img src="https://i.ibb.co/F30d8XS/rsz-guide.jpg"></img>
+    <span class="nav__text">Guide</span>
+  </a>
+  <a href="#" class="nav__link">
+    <i class="material-icons nav__icon">Search</i>
+    <span class="nav__text">Search</span>
+  </a>
+</nav>
+</bottom>
+</html>
+
+
+<style>
+body {
+    margin: 0 0 55px 0;
+    background-color: dimgrey;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 55px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    background-color: black;
+    display: flex;
+    overflow-x: auto;
+}
+
+.nav__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    min-width: 50px;
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: sans-serif;
+    font-size: 13px;
+    color: #444444;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    transition: background-color 0.1s ease-in-out;
+}
+
+.nav__link:hover {
+    background-color: dimgray;
+}
+
+.nav__link--active {
+    color: #009578;
+}
+
+.nav__icon {
+    font-size: 18px;
+}
+
+</style>
