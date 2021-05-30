@@ -133,6 +133,10 @@ var novacinema = function novacinema(){
 
 }
 
+var ct1 = function ct1(){
+  var player = new Playerjs({id:"player", file:"http://213.151.233.20:8000/dna-5100-tv-pc/hls/4002v105.m3u8"});
+}
+
 var elektrikatv = function elektrikatv(){
     var player = new Playerjs({id:"player", file:"//rtmp.elektrika.cz/live/myStream.sdp/playlist.m3u8"});
 
