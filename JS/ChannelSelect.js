@@ -23,6 +23,7 @@ var wau = function wau(){
 }
 
 var ta3 = function ta3(){
+  alert("Currently not working")
     var player = new Playerjs({id:"player", file:"https://tv.parrottv.tk/TA3.m3u8"});
 
 }
