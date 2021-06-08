@@ -212,3 +212,79 @@ var tvm = function tvm(){
     var player = new Playerjs({id:"player", file:"https://hlscat.com/my_list/s/f0f7d1cae255f3d243cafe2f4764c9d5.m3u8"});
 
 }
+
+
+
+// ------------------------------------------------------------------------------
+//                                Ekostol.sk
+// ------------------------------------------------------------------------------
+
+var trencin = function trencin(){
+    var player = new Playerjs({id:"player", file:"https://kukaj.profi-net.sk:443/commercial/KOSTOLTRENCIN.stream/playlist.m3u8"});
+
+}
+
+var ruzomberok = function ruzomberok(){
+    var player = new Playerjs({id:"player", file:"https://kukaj.profi-net.sk:443/commercial/KOSTOLRK.stream/playlist.m3u8"});
+
+}
+
+var spis = function spis(){
+    var player = new Playerjs({id:"player", file:"https://kukaj.profi-net.sk:443/commercial/KOSTOLSPISSKYSTVRTOK.stream/playlist.m3u8"});
+
+}
+
+var hornazdana = function hornazdana(){
+    var player = new Playerjs({id:"player", file:"https://kukaj.profi-net.sk:443/commercial/KOSTOLHORNAZDANA.stream/playlist.m3u8"});
+
+}
+
+var partizanske = function partizanske(){
+    var player = new Playerjs({id:"player", file:"https://kukaj.profi-net.sk:443/commercial/KOSTOLPARTIZANSKE.stream/playlist.m3u8"});
+
+}
+
+var kosicesaca = function kosicesaca(){
+    var player = new Playerjs({id:"player", file:"https://kukaj.profi-net.sk:443/commercial/KOSTOLKOSICESACA.stream/playlist.m3u8"});
+
+}
+
+var ludanice = function ludanice(){
+    var player = new Playerjs({id:"player", file:"https://kukaj.profi-net.sk:443/commercial/KOSTOLLUDANICE.stream/playlist.m3u8"});
+
+}
+
+var radosina = function radosina(){
+    var player = new Playerjs({id:"player", file:"https://stream.wircom.sk:443/kos/pan.stream/playlist.m3u8"});
+
+}
+
+var vnz = function vnz(){
+    var player = new Playerjs({id:"player", file:"https://kukaj.profi-net.sk:443/commercial/KOSTOLNVNZ.stream/playlist.m3u8"});
+
+}
+
+var bojna = function bojna(){
+    var player = new Playerjs({id:"player", file:"https://stream.wircom.sk:443/bojna//bojna.stream/playlist.m3u8"});
+
+}
+
+var cernova = function cernova(){
+    var player = new Playerjs({id:"player", file:"https://kukaj.profi-net.sk:443/commercial/KOSTOLCERNOVA.stream/playlist.m3u8"});
+
+}
+
+var janovce = function janovce(){
+    var player = new Playerjs({id:"player", file:"https://kukaj.profi-net.sk:443/commercial/KOSTOLJANOVCE.stream/playlist.m3u8"});
+
+}
+
+var lukacovce = function lukacovce(){
+    var player = new Playerjs({id:"player", file:"https://kukaj.profi-net.sk:443/commercial/KOSTOLLUKACOVCE.stream/playlist.m3u8"});
+
+}
+
+var ruzomberok = function ruzomberok(){
+    var player = new Playerjs({id:"player", file:"https://kukaj.profi-net.sk:443/commercial/KOSTOLJEZUITI.stream/playlist.m3u8"});
+
+}
