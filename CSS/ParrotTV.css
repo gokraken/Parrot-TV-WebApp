@@ -1,0 +1,48 @@
+.content {
+    overflow-y: hidden;
+}
+  
+strong {
+            font-size: 20px;
+            color: antiquewhite;
+            background-color: black;
+        }
+  
+        button {
+            border: 5px solid blue;
+            background-color: black;
+            width: 500px;
+            height: 100%;
+        }
+  
+   .play {
+     width: 100%;
+     height: 40%!important;
+   }
+  
+    .col {
+      width: 100%;
+      height: 20%;
+      white-space: nowrap;
+      position: relative;
+      overflow-x: scroll;
+      overflow-y: hidden;
+      -webkit-overflow-scrolling: touch;
+    }
+  
+    .col div {
+      width: 24.5%;
+      background-color: #eee;
+      float: none;
+      height: 90%;
+      margin: 0 0.25%;
+      display: inline-block;
+      zoom: 1;
+  }
+
+  body {
+    margin: 0 0 55px 0;
+    background-color: black;
+    overflow-x: hidden;
+}
+  

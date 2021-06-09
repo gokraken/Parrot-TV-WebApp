@@ -1,0 +1,21 @@
+h4 {
+    color: white;
+    font-size: 30px;
+}
+
+body {
+    margin: 0 0 55px 0;
+    background-color: black;
+    overflow-x: hidden;
+}
+
+h6 {
+    color: blanchedalmond;
+    font-size: 20px;
+}
+
+.iframe1 {
+    border: 0px;
+    width: 100%;
+    height: 100%;
+}
