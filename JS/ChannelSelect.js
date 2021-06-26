@@ -22,6 +22,10 @@ var wau = function wau(){
 
 }
 
+var markiza = function markiza(){
+    var player = new Playerjs({id:"player", file:"https://list.iptvcat.com/my_list/s/fc11d89f9c1bcfeb43a472f39f422970.m3u8"});
+}
+
 var ta3 = function ta3(){
   alert("Currently not working")
     var player = new Playerjs({id:"player", file:"https://tv.parrottv.tk/TA3.m3u8"});
