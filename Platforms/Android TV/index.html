@@ -1,9 +1,14 @@
+<!DOCTYPE html>
 <html>
 
 <head>
+    <title>Parrot TV | Android TV</title>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://parrotdevelopers.github.io/Parrot-TV-WebApp/JS/ChannelSelect.js"></script>
+    <script src="https://cdn.plrjs.com/player/6i77k2er7y64h/odzgctzvvcne.js" type="text/javascript"></script> <!--Main Player-->
 </head>
+
+
 
 <div id="mySidebar" class="sidebar">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -37,13 +42,32 @@
   </div>
   <body>
   <div id="main">
-    <button class="openbtn" onclick="openNav()">&#9776; Open Sidebar</button>
+    <button class="openbtn" onclick="openNav()">&#9776; Select Channel</button>
   </div>
+
+  <div class="play" id="player"></div>
+
+<script>
+   var player = new Playerjs({id:"player", file:"https://github.com/ParrotDevelopers/Parrot-TV-WebApp/blob/main/VIdeo/SelectChannel.mp4?raw=true"});
+</script>
 </body>
 
 
   
   <style>
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.play {
+    height: 70%!important;
+    width: 99%;
+}
+
+
 .SKCHNLS {
     font-size: 30px;
 }
@@ -52,6 +76,32 @@
     font-size: 30px;
     border:1px solid blue;
     margin: 0;
+}
+
+.openbtn .text { /* added class to distinct between text and separator */
+  max-width: 0;
+  transition: max-width 0.5s;
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.openbtn:hover .text { /* as above */
+  max-width: 11rem;
+  transition-delay: 0.1s; /* The transition must wait until separator expands itself */
+}
+
+.openbtn .separator {
+  display: inline-block;  /* Default span's display type is `inline` which ignored width changes */
+  width: 0;               /* Initially it's hidden */
+  transition: width 0.1s; /* Probably you will want to adjust this setting. The important part is, keep it in sync with transition-delay on .text  */
+  transition-delay: 0.5s; /* Wait until .text .text 'shrinking' has ended. This is overridden if the button is hovered. Ofc keep it in sync with .text transition-duration */
+}
+
+.openbtn:hover .separator {
+  width: 0.3em;             /* that's the 'margin' width */
+  transition-delay: unset;  /* If the button is hovered, we don't want to wait with the transition at all. */
 }
 
 /* Style the button that is used to open and close the collapsible content */
