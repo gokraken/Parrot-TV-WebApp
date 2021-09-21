@@ -3,53 +3,43 @@
 // ------------------------------------------------------------------------------
 
 var joj = function joj(){
-    var player = new Playerjs({id:"player", file:"//nn2.joj.sk/hls/joj-720.m3u8"});
+    var player = new Playerjs({id:"player", file:"//nn.geo.joj.sk/hls/joj-720.m3u8"});
 
 }
 
 var jojplus = function jojplus(){
-    var player = new Playerjs({id:"player", file:"//nn2.joj.sk/hls/jojplus-540.m3u8"});
+    var player = new Playerjs({id:"player", file:"//nn.geo.joj.sk/live/hls/jojplus-540.m3u8"});
 
 }
 
 var jojfamily = function jojfamily(){
-    var player = new Playerjs({id:"player", file:"//nn.geo.joj.sk/hls/family-360.m3u8"});
+    var player = new Playerjs({id:"player", file:"//nn.geo.joj.sk/hls/family-540.m3u8"});
 
 }
 
 var wau = function wau(){
-    var player = new Playerjs({id:"player", file:"https://nn.geo.joj.sk/live/wau-index.m3u8?fluxustv.m3u8"});
+    var player = new Playerjs({id:"player", file:"//nn.geo.joj.sk/hls/wau-540.m3u8"});
 
 }
 
-var markiza = function markiza(){
-    var player = new Playerjs({id:"player", file:"https://list.iptvcat.com/my_list/s/fc11d89f9c1bcfeb43a472f39f422970.m3u8"});
-}
-
-var ta3 = function ta3(){
-  alert("Currently not working")
-    var player = new Playerjs({id:"player", file:"https://tv.parrottv.tk/TA3.m3u8"});
-
-}
 
 var fashiontv = function fashiontv(){
-    var player = new Playerjs({id:"player", file:"//lb.streaming.sk/fashiontv/stream/playlist.m3u8?fluxustv.m3u8"});
-
-}
-
-var rik = function rik(){
-    var player = new Playerjs({id:"player", file:"https://nn.geo.joj.sk/live/hls/rik-540.m3u8"});
+    var player = new Playerjs({id:"player", file:"//lb.streaming.sk/fashiontv/stream/playlist.m3u8"});
 
 }
 
 var tvlux = function tvlux(){
-    var player = new Playerjs({id:"player", file:"//live.tvlux.sk:1935/lux/lux.stream_360p/chunklist_w1295439472.m3u8"});
+    var player = new Playerjs({id:"player", file:"//stream.tvlux.sk/lux/ngrp:lux.stream_all/playlist.m3u8"});
 
 }
 
 var lifetv = function lifetv(){
-    var player = new Playerjs({id:"player", file:"https://lifetv.mpks.sk/s.m3u8"});
+    var player = new Playerjs({id:"player", file:"//lifetv.mpks.sk/s.m3u8"});
 
+}
+
+var tvnitricka = function tvnitricka() {
+    var player = new Playerjs({id:"player", file:"//query-streamlink.herokuapp.com/iptv-query?streaming-ip=https://www.youtube.com/channel/UCnEQCNDsMtPlrVwCrRViaeQ/live"});
 }
 
 var senzitv = function senzitv(){
@@ -67,13 +57,6 @@ var tvraj = function tvraj(){
 
 }
 
-var btv = function btv(){
-    console.log("RTMP Not Supported");
-    console.log(btv);
-    var player = new Playerjs({id:"player", file:"rtmp://s1.media-planet.sk:80/live/bardejov1"});
-
-}
-
 var kd = function kd(){
     var player = new Playerjs({id:"player", file:"//lb.streaming.sk/tvnasa/stream/playlist.m3u8"});
 
@@ -84,22 +67,9 @@ var tvnz = function tvnz(){
 
 }
 
-var tvr = function tvr(){
-    console.log("RTMP Not Supported");
-    console.log(tvr);
-    var player = new Playerjs({id:"player", file:"rtmp://s1.media-planet.sk:80/live/reduta"});
-
-}
 
 var tvru = function tvru(){
     var player = new Playerjs({id:"player", file:"//lb.streaming.sk/tvruzinov/stream/playlist.m3u8"});
-
-}
-
-var tvt = function tvt(){
-    console.log("RTMP Not Supported");
-    console.log(tvt);
-    var player = new Playerjs({id:"player", file:"rtmp://s1.media-planet.sk:80/live/turzovka"});
 
 }
 
@@ -112,35 +82,6 @@ var tvt = function tvt(){
 // ------------------------------------------------------------------------------
 //                                 CZ Channels
 // ------------------------------------------------------------------------------
-
-var nova = function nova(){
-    var player = new Playerjs({id:"player", file:"https://nova-live.ssl.cdn.cra.cz/channels/nova_avod/playlist/cze/live_hq.m3u8"});
-
-}
-
-var nova2 = function nova2(){
-    var player = new Playerjs({id:"player", file:"https://nova-live.ssl.cdn.cra.cz/channels/nova_2_avod/playlist.m3u8"});
-
-}
-
-var novagold = function novagold(){
-    var player = new Playerjs({id:"player", file:"https://nova-live.ssl.cdn.cra.cz/channels/nova_gold_avod/playlist.m3u8"});
-
-}
-
-var novaaction = function novaaction(){
-    var player = new Playerjs({id:"player", file:"//rtmp.elektrika.cz/live/myStream.sdp/playlist.m3u8"});
-
-}
-
-var novacinema = function novacinema(){
-    var player = new Playerjs({id:"player", file:"https://nova-live.ssl.cdn.cra.cz/channels/nova_cinema_avod/playlist/cze/live_hq.m3u8"});
-
-}
-
-var ct1 = function ct1(){
-  var player = new Playerjs({id:"player", file:"http://213.151.233.20:8000/dna-5100-tv-pc/hls/4002v105.m3u8"});
-}
 
 var elektrikatv = function elektrikatv(){
     var player = new Playerjs({id:"player", file:"//rtmp.elektrika.cz/live/myStream.sdp/playlist.m3u8"});
@@ -183,7 +124,7 @@ var prahatv = function prahatv(){
 }
 
 var tvnoe = function tvnoe(){
-    var player = new Playerjs({id:"player", file:"https://w100.quickmedia.tv/prozeta-live04/_definst_/prozeta-live04.smil/Playlist.m3u8"});
+    var player = new Playerjs({id:"player", file:"//w100.quickmedia.tv/prozeta-live04/_definst_/prozeta-live04.smil/Playlist.m3u8"});
 
 }
 
@@ -212,10 +153,6 @@ var vctv = function vctv(){
 
 }
 
-var tvm = function tvm(){
-    var player = new Playerjs({id:"player", file:"https://hlscat.com/my_list/s/f0f7d1cae255f3d243cafe2f4764c9d5.m3u8"});
-
-}
 
 
 
