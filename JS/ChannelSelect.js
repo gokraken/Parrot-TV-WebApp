@@ -38,9 +38,8 @@ var lifetv = function lifetv(){
 
 }
 
-var tvnitricka = function tvnitricka() {
+var tvnitricka = function tvnitricka(){
     var player = new Playerjs({id:"player", file:"https://query-streamlink.herokuapp.com/iptv-query?streaming-ip=https://www.youtube.com/channel/UCnEQCNDsMtPlrVwCrRViaeQ/live"});
-}
 
 var senzitv = function senzitv(){
     var player = new Playerjs({id:"player", file:"//109.74.144.130/live/senzitest/playlist.m3u8"});
