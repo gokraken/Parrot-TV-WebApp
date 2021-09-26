@@ -1,22 +1,27 @@
 <html>
 <head>
   <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon">
-<link href="CSS/Scrollbar.css" rel="stylesheet"> <!--Custom Scrollbar-->
-<link href="CSS/NoSelect.css" rel="stylesheet"> <!--Turns off selecting text-->
-<link href="CSS/NavBar.css" rel="stylesheet"> <!--Bottom menu-->
 <link href="CSS/style.css" rel="stylesheet"> <!--Default style for this page-->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
 <script src="JS/ChannelSelect.js" type="text/javascript"></script> <!--Allows you to select channel-->
 <script src="JS/script.js" rel="text/javascript"></script>
 <script src="https://cdn.plrjs.com/player/6i77k2er7y64h/odzgctzvvcne.js" type="text/javascript"></script> <!--Main Player-->
-<title id="title">Parrot TV | Home</title>
-<head>
+<title id="title">Parrot TV | WebApp</title>
+ 
+</head>
+
+
 <body onload="onload()">
+  <div id="preloader"></div>
+ 
+
   <div class="play" id="player"></div>
 
   <script>
      var player = new Playerjs({id:"player", file:"https://github.com/ParrotDevelopers/Parrot-TV-WebApp/blob/main/VIdeo/SelectChannel.mp4?raw=true"});
   </script>
+  
+
 <div class="content">
   <p class="pleaseselect" id="plsselect">Please Select Category!</p>
 
@@ -26,7 +31,6 @@
       <a class="channels" onclick="jojplus()"><button><img class="imgch" border="0" src="https://i.ibb.co/G5VWSNM/Plus.png"></button></a>
       <a class="channels" onclick="jojfamily()"><button><img class="imgch" border="0" src="https://i.ibb.co/MNRvsnZ/JOJ-Family.jpg"></button></a>
       <a class="channels" onclick="wau()"><button><img class="imgch" border="0" src="https://i.ibb.co/kmDHqy3/WAU.png"></button></a>
-      <a class="channels" onclick="tvnitricka()"><button><img class="imgch" border="0" src="https://i.ibb.co/9ZM40T4/TV-Nitricka.png"></button></a>
       <a class="channels" onclick="fashiontv()"><button><img class="imgch" border="0" src="https://i.ibb.co/XzBpYkL/Fashion-TV.png"></button></a>
       <a class="channels" onclick="tvlux()"><button><img class="imgch" border="0" src="https://i.ibb.co/4jx6gzZ/TV-Lux.png"></button></a>
       <a class="channels" onclick="lifetv()"><button><img class="imgch" border="0" src="https://i.ibb.co/3YktrSX/Life-TV.png"></button></a>
@@ -39,20 +43,19 @@
      </div>
 
      <div class="CZ" id="CZ">
-      <a class="channels" onclick="elektrikatv()"><button><img class="imgch" border="0" src="https://i.ibb.co/sRVbxTv/Elektrika-TV.jpg""></button></a>
-      <a class="channels" onclick="ocko()"><button><img class="imgch" border="0" src="https://i.ibb.co/1fbv9Qq/Ocko.png""></button></a>
-      <a class="channels" onclick="ockogold()"><button><img class="imgch" border="0" src="https://i.ibb.co/g35N1VV/Ocko-Gold.gif""></button></a>
-      <a class="channels" onclick="ockoexpres()"><button><img class="imgch" border="0" src="https://i.ibb.co/q9pwKJC/Ocko-Expres.png""></button></a>
-      <a class="channels" onclick="ockostar()"><button><img class="imgch" border="0" src="https://i.ibb.co/HX9M2pS/Ocko-Star.png""></button></a>
-      <a class="channels" onclick="polartv()"><button><img class="imgch" border="0" src="https://i.ibb.co/8sQ8yxh/Polar.png""></button></a>
-      <a class="channels" onclick="huntertv()"><button><img class="imgch" border="0" src="https://i.ibb.co/tzNHRp9/HunterTV.png""></button></a>
-      <a class="channels" onclick="prahatv()"><button><img class="imgch" border="0" src="https://i.ibb.co/yqrcmvW/PrahaTV.png""></button></a>
-      <a class="channels" onclick="tvnoe()"><button><img class="imgch" border="0" src="https://i.ibb.co/z7fQ7yJ/TV-Noe.png""></button></a>
-      <a class="channels" onclick="retro()"><button><img class="imgch" border="0" src="https://i.ibb.co/YPtmSrV/Retro.png""></button></a>
-      <a class="channels" onclick="slagr()"><button><img class="imgch" border="0" src="https://i.ibb.co/Nx2fR74/Slagr.png""></button></a>
-      <a class="channels" onclick="slagr2()"><button><img class="imgch" border="0" src="https://i.ibb.co/WxDvCry/Slagr2.png""></button></a>
-      <a class="channels" onclick="tvnatura()"><button><img class="imgch" border="0" src="https://i.ibb.co/K0HR49p/TV-Natura.png""></button></a>
-      <a class="channels" onclick="vctv()"><button><img class="imgch" border="0" src="https://i.ibb.co/ggWW1L0/VCTV.png""></button></a>
+      <a class="channels" onclick="elektrikatv()"><button><img class="imgch" border="0" src="https://i.ibb.co/sRVbxTv/Elektrika-TV.jpg"></img></button></a>
+      <a class="channels" onclick="ocko()"><button><img class="imgch" border="0" src="https://i.ibb.co/1fbv9Qq/Ocko.png"></img></button></a>
+      <a class="channels" onclick="ockogold()"><button><img class="imgch" border="0" src="https://i.ibb.co/g35N1VV/Ocko-Gold.gif"></img></button></a>
+      <a class="channels" onclick="ockoexpres()"><button><img class="imgch" border="0" src="https://i.ibb.co/q9pwKJC/Ocko-Expres.png"></img></button></a>
+      <a class="channels" onclick="ockostar()"><button><img class="imgch" border="0" src="https://i.ibb.co/HX9M2pS/Ocko-Star.png"></img></button></a>
+      <a class="channels" onclick="polartv()"><button><img class="imgch" border="0" src="https://i.ibb.co/8sQ8yxh/Polar.png"></img></button></a>
+      <a class="channels" onclick="huntertv()"><button><img class="imgch" border="0" src="https://i.ibb.co/tzNHRp9/HunterTV.png"></img></button></a>
+      <a class="channels" onclick="prahatv()"><button><img class="imgch" border="0" src="https://i.ibb.co/yqrcmvW/PrahaTV.png"></img></button></a>
+      <a class="channels" onclick="tvnoe()"><button><img class="imgch" border="0" src="https://i.ibb.co/z7fQ7yJ/TV-Noe.png"></img></button></a>
+      <a class="channels" onclick="retro()"><button><img class="imgch" border="0" src="https://i.ibb.co/YPtmSrV/Retro.png"></img></button></a>
+      <a class="channels" onclick="slagr()"><button><img class="imgch" border="0" src="https://i.ibb.co/Nx2fR74/Slagr.png"></img></button></a>
+      <a class="channels" onclick="tvnatura()"><button><img class="imgch" border="0" src="https://i.ibb.co/K0HR49p/TV-Natura.png"></img></button></a>
+      <a class="channels" onclick="vctv()"><button><img class="imgch" border="0" src="https://i.ibb.co/ggWW1L0/VCTV.png"></img></button></a>
      </div>
 
      <div class="EK" id="EK">
@@ -89,3 +92,16 @@
     <span class="nav__text">Ekostol</span>
   </a>
 </bottom>
+
+
+<script>
+  window.addEventListener('load', function () {
+    var player = new Playerjs({id:"player", ready:"PlayerReady", poster:"./Images/BG.jpg"});
+    pl = document.getElementById("preloader")
+    pl.style.display = "none";
+    console.log("Preloader closed!");
+  })
+</script>
+
+
+</html>

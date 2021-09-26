@@ -1,4 +1,4 @@
-var animation = "animate__flash"
+var animation = "animate__shakeX"
 
 function animationSK() {
     const element = document.getElementById("SK");
@@ -46,6 +46,7 @@ function onload() {
 
 function switchtoSK() {
     animationSK()
+    var player = new Playerjs({id:"player", ready:"PlayerReady", poster:"./Images/BG.jpg"});
     document.title = "Parrot TV | SK";
     SKbtn = document.getElementById("btnSK");
     CZbtn = document.getElementById("btnCZ");
@@ -65,6 +66,7 @@ function switchtoSK() {
 
 function switchtoCZ() {
     animationCZ()
+    var player = new Playerjs({id:"player", ready:"PlayerReady", poster:"./Images/BG.jpg"});
     document.title = "Parrot TV | CZ";
     SKbtn = document.getElementById("btnSK");
     CZbtn = document.getElementById("btnCZ");
@@ -84,6 +86,7 @@ function switchtoCZ() {
 
 function switchtoEK() {
     animationEK()
+    var player = new Playerjs({id:"player", ready:"PlayerReady", poster:"./Images/BG.jpg"});
     document.title = "Parrot TV | Ekostol";
     SKbtn = document.getElementById("btnSK");
     CZbtn = document.getElementById("btnCZ");
