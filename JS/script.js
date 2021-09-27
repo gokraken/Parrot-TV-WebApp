@@ -41,6 +41,11 @@ function onload() {
     ek.style.display = "none";
     pls.style.display = "block";
 
+    var wau = function wau(){
+        var player = new Playerjs({id:"player", poster:"./Images/BG.jpg", file:"https://github.com/ParrotDevelopers/Parrot-TV-WebApp/blob/main/Video/Select.mp4?raw=true"});
+    
+    }
+
 }
 
 
@@ -94,10 +99,12 @@ function switchtoEK() {
     sk = document.getElementById("SK");
     cz = document.getElementById("CZ");
     ek = document.getElementById("EK");
+    pls = document.getElementById("plsselect")
     SKbtn.classList.remove("nav__link--active");
     CZbtn.classList.remove("nav__link--active");
     EKbtn.classList.add("nav__link--active");
     sk.style.display = "none";
     cz.style.display = "none";
     ek.style.display = "block";
+    pls.style.display = "none"
 }

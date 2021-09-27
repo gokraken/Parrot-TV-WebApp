@@ -3,7 +3,7 @@
 // ------------------------------------------------------------------------------
 
 var joj = function joj(){
-    var player = new Playerjs({id:"player", poster:"./Images/BG.jpg", file:"//nn.geo.joj.sk/hls/joj-720.m3u8"});
+    var player = new Playerjs({id:"player", poster:"./Images/BG.jpg", file:"http://nn.geo.joj.sk/hls/joj-720.m3u8"});
 
 }
 
