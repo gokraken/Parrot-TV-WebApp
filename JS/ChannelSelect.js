@@ -22,6 +22,10 @@ var wau = function wau(){
 
 }
 
+var markiza = function markiza(){
+    var player = new Playerjs({id:"player", poster:"./Images/BG.jpg", file:"//ntv-st01-vod01-bts10-stage.orange.sk:8000/dna-5106-tv-pc/hls/4001v102.m3u8"});
+
+}
 
 var fashiontv = function fashiontv(){
     var player = new Playerjs({id:"player", poster:"./Images/BG.jpg", file:"//lb.streaming.sk/fashiontv/stream/playlist.m3u8"});
